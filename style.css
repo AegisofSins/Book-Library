@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+#input > form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+}
+
+#input > form > label {
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+
+}
