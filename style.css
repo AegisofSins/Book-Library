@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 30%;
     width: 100%;
 }
 
@@ -16,13 +16,29 @@ body {
     display: flex;
     flex-direction: column;
     flex-basis: 300px;
+
 }
 
 #input > form > label {
     text-align: center;
+    margin-top: 20px;
 }
 
 #cards {
     display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(300px, 1fr) );
+    grid-template-rows: auto;
+    margin: 30px;
+    gap: 30px;
+}
 
+.bookcard {
+    height: 550px;
+    width: 300px;
+    border: 1px solid blue;
+    border-radius: 1.25rem;   
+}
+
+#submit {
+    margin-top: 20px;
 }
