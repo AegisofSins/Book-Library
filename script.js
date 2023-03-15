@@ -57,32 +57,34 @@ function getBookFromInput() {
    }
 }
 
-//Create and style book cards
+//Create and style book card
 
 function createCard () {
   cards.innerHTML = '';
   library.map(e => {
-    let div = document.createElement('div');
+    const div = document.createElement('div');
     cards.appendChild(div);
     div.classList.add('bookcard');
-    let title = document.createElement('h2');
+
+    const title = document.createElement('h2');
     div.appendChild(title)
     title.innerText = e.title;
-    let author = document.createElement('h4');
+
+    const author = document.createElement('h4');
     div.appendChild(author)
     author.innerText = e.author;
-    let pages = document.createElement('h4');
+
+    const pages = document.createElement('h4');
     div.appendChild(pages)
     pages.innerText = e.pages;
-    let read = document.createElement('button')
+
+    const read = document.createElement('button')
     div.appendChild(read);
     read.classList.add("readBtn")
     read.innerText = e.isRead == true ? 'Read' : 'Not Read';
-    read.addEventListener("click", () => {
+    read.addEventListener("click", () => { 
       read.innerText == 'Not Read' ? read.innerText = 'Read' : read.innerText = 'Not Read';
     }); 
   })
 }
-
-
 
